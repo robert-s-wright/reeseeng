@@ -16,6 +16,7 @@ body, html {
     height: 100vh;
     width: 100vw;
     overflow-y: hidden;
+    
 }
 
 
@@ -306,137 +307,276 @@ div.buttons {
 }
 
 
-@media screen and (max-width: 850px) {
-    nav {
-        text-align: center;
-        height: 110px;
-    }
 
-    div#icon {
-        margin-left: 0px;
-        margin-top: 15px;
-        margin-bottom: 10px;
-        max-width: 100%;
-        height: calc(100% - 70px)
-    }
 
-    #icon a {
-        font-size: 34px;
-    }
+
+/*Engineering Page */
+
+div.wrapper {
+  display: grid;
+  grid-template-columns: (1, 3);
+  width: 100%;
+  height: 100%;
+  
+}
+
+div.engineering-solutions {
+  font-family: 'Kanit', sans-serif;
+  grid-column: 2 / 1;
+  display: inline-block;
+
+}
+
+li.service {
+    font-size: 25px;
+    color: rgba(0, 0, 0, .5)
+    
+}
+
+
+
+
+
+div.services {
+  display: inline-block;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  font-family: 'Kanit', sans-serif;
+  grid-column: 4 / 2;
+  padding: 5px;
+  padding-bottom: 100px;
+  width: 100%
+}
+
+.capability {
+  display: block;
+  background-color: rgba(189, 187, 187, .4);
+  z-index: 2;
+  text-align: center;
+  border-radius: 10px;
+  margin: 5px;
+  box-shadow: 2px 2px 2px 2px black;
+}
+
+
+
+.engineering-solutions ul, .capability ul {
+  list-style: none;
+  display: block;
+}
+
+.capability ul {
+  margin: 20px;
+  text-align: left;
+  
+}
+
+.capability h3 {
+  font-size: 25px;
+}
+
+.capability li {
    
-    .navlist {
-        font-weight: 400;
-        font-size: 15px;
-        height: 35px;
-        width: 100%;
-        padding: 0;
-        border-radius: 0 0 10px 10px;
-        box-shadow: 0px 3px 2px 2px rgb(81, 81, 120);
-        text-shadow: 1px 1px black;
-    }
+  margin: 15px;
+  padding-bottom: 15px;
+  font-size: 20px;
+  color: rgba(0, 0, 0, .7);
+  border-bottom: 2px solid rgba(0, 0, 0, .2);
+  
+}
 
-    .socialicons {
-        right: 50%;
-        transform:translateX(50%);
-        border-radius: 0 0 10px 10px;
-        box-shadow: 2px 2px 1px 1px rgb(81, 81, 120);
-    }
+.capability li:last-of-type {
+  border-bottom: none;
+}
 
-    main {
-        top: 110px;
-        height: calc(100vh - 110px);
-        padding-top: 0;
-        padding-bottom: 60px;
-    }
 
-    .info {
-        padding-bottom: 30px;
-    }
-
-    .info h1 {
-        
-        font-size:  25px;
-        margin: 15px
-    }
-    
-    .info p {
-        
-        font-size: 20px;
-        line-height: 90%;
-    
-    }
-
-    #photocarousel {
-        display: inline;
-        height: 450px;
-        flex-basis: 4500px;
-        flex-grow: 1;
-        margin: 0 auto 0 auto;
-    }
-    
-    .carousel-button {
-        font-size: 2rem;
-    }
-    
+#swlogo, #surfcamlogo, #haaslogo {
+    width: 80%;
+    margin: 15px;
 }
 
 @media screen and (max-width: 967px) {
 
-    .info h1 {
-        
-        font-size: 25px;
-        
-    }
-    
-    .info p {
-        
-        font-size: 20px;
+  .info h1 {
+      
+      font-size: 25px;
+      
+  }
+  
+  .info p {
+      
+      font-size: 20px;
 
-    
-    }
+  
+  }
+
+  /*engineering*/
+
+  li.service, .capability li {
+    font-size: 18px;    
+}
 
 }
 
-@media screen and (max-width: 500px) {
-    #photocarousel {
-        height: 400px;
-        margin-top: -20px
-    }
-    
-    .info h1 {
-        
-        font-size: 22px;
-        margin: 0px;
-        padding-bottom: 0px;
-    }
-    
-    .info p {
-        
-        font-size: 18px;
-        line-height: 90%;
-    
-    }
+@media screen and (max-width: 850px) {
+  nav {
+      text-align: center;
+      height: 110px;
+  }
 
-    main {
-        padding-top: 15px;
-        padding-bottom: 25px;
-    }
+  div#icon {
+      margin-left: 0px;
+      margin-top: 15px;
+      margin-bottom: 10px;
+      max-width: 100%;
+      height: calc(100% - 70px)
+  }
+
+  #icon a {
+      font-size: 34px;
+  }
+ 
+  .navlist {
+      font-weight: 400;
+      font-size: 15px;
+      height: 35px;
+      width: 100%;
+      padding: 0;
+      border-radius: 0 0 10px 10px;
+      box-shadow: 0px 3px 2px 2px rgb(81, 81, 120);
+      text-shadow: 1px 1px black;
+  }
+
+  .socialicons {
+      right: 50%;
+      transform:translateX(50%);
+      border-radius: 0 0 10px 10px;
+      box-shadow: 2px 2px 1px 1px rgb(81, 81, 120);
+  }
+
+  main {
+      top: 110px;
+      height: calc(100vh - 110px);
+      padding-top: 0;
+      padding-bottom: 60px;
+  }
+
+  .info {
+      padding-bottom: 30px;
+  }
+
+  .info h1 {
+      
+      font-size:  25px;
+      margin: 15px
+  }
+  
+  .info p {
+      
+      font-size: 20px;
+      line-height: 90%;
+  
+  }
+
+  #photocarousel {
+      display: inline;
+      height: 450px;
+      flex-basis: 450px;
+      flex-grow: 1;
+      margin: 0 auto 0 auto;
+  }
+  
+  .carousel-button {
+      font-size: 2rem;
+  }
+
+  /*engineering */
+
+  div.wrapper {
+    display: block;
+  }
+
+  div.engineering-solutions {
+    width: 100%;
+    display: block;
+  }
+
+  div.services {
+    display: block;
+    width: 100%;
+    
+  }
+
+  
+
+  #swlogo, #surfcamlogo, #haaslogo {
+    width: 28%;
+    margin: 5px;
+}
+
+
+  
+}
+
+
+
+@media screen and (max-width: 500px) {
+  #photocarousel {
+      height: 400px;
+      margin-top: -20px
+  }
+  
+  .info h1 {
+      
+      font-size: 22px;
+      margin: 0px;
+      padding-bottom: 0px;
+  }
+  
+  .info p {
+      
+      font-size: 18px;
+      line-height: 90%;
+  
+  }
+
+  main {
+      padding-top: 15px;
+      padding-bottom: 25px;
+  }
+
+  /*engineering */
+  li.service {
+    font-size: 17px;   
+}
+
+.capability h3 {
+  font-size: 20px;
+}
+
+.capability li {
+   
+  font-size: 17px;
+  
+  
+}
 }
 
 @media screen and (max-width: 450px) {
-    #photocarousel {
-        height: 380px;
-        margin-top: -30px
-    }
+  #photocarousel {
+      height: 380px;
+      margin-top: -30px
+  }
 
-    .navlist {
-        font-weight: 400;
-        font-size: 13px;
-        
-    }
+  .navlist {
+      font-weight: 400;
+      font-size: 13px;
+      
+  }
 
-    #icon a {
-        font-size: 30px;
-    }
+  #icon a {
+      font-size: 30px;
+  }
 }
-
